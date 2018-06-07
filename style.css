@@ -1,0 +1,112 @@
+body{
+	margin: 0;
+}
+
+.parent{
+	width: 100vw;
+	height: 100vh;
+	background-color: #19334d ;
+	position: relative;
+    animation-name: bg;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.under-div1{
+  height: 200px;
+  width:700px ;
+  background-color: brown;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 200px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+
+}
+.under-div2{
+  height: 200px;
+  width:700px ;
+  background-color: brown;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+
+
+}
+
+.ball{
+
+  height: 120px;
+  width:120px ;
+  border-radius:120px ;
+  box-shadow: 1px 2px 71px 29px yellow;
+  background-color:orange;
+  position: absolute;
+  bottom: 0;
+  margin-left: 55%;
+  animation-name: rise;
+
+
+	animation-duration: 20s;
+  animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+@keyframes rise{
+
+
+    25%{
+       background-color: orange;
+
+        transform:translate(0,-500px);
+    }
+    50%{
+        background-color: orange;
+        transform:translate(0,0);
+    }
+    75%{
+        transform:translate(0,-200px);
+        box-shadow:none;
+        background-color: white;
+        
+    }
+     95%{
+        transform:translate(0,-500px);
+        box-shadow: 2px 2px 60px 10px white;
+        background-color: white;
+        
+    }
+     100%{
+      background-color: white;
+      box-shadow: 2px 2px 60px 10px white;
+      transform:translate(0,0);
+  }
+}
+
+
+
+@keyframes bg{
+  
+25%{
+        
+        background-color:#8db3ef ;
+    }
+    50%{
+
+        background-color:#8db3ef ;
+    }
+    75%{
+        background-color:#19334d ;
+    }
+     95%{
+        background-color:#19334d ;
+    }
+     100%{
+        background-color:#19334d ;
+    }
+
+}
